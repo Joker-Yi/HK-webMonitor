@@ -68,7 +68,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
    优点: 支持具有flash的主流浏览器(但Chrome预计2020年底移除flash)
    缺点: flash技术正慢慢被主流浏览器所淘汰,比如谷歌;同时视频延迟由于拉流 -转码- 推流这系列操作,导致延迟在3-5s左右
 
-3. 此方案跟方案2类似, 需要将rtsp视频流 借助 ffmpeg 转为 rtmp视频流,渲染不采用flash插件,而是使用H5标准的标签或者借助使用了H5的框架,如<video><canvas>标签和b站的开源框架flv.js (该方案未实现)
+3. 此方案跟方案2类似, 需要将rtsp视频流 借助 ffmpeg 转为 rtmp视频流,渲染不采用flash插件,而是使用H5标准的标签或者借助使用了H5的框架,如video,canvas标签和b站的开源框架flv.js (该方案未实现2020.3.16,未实现原因ffmpeg 转码 占用大量cpu资源及丢包,2020.3.25后调整ffmpeg转码命令参数后解决这些问题,该方法已适用于项目)
    优点: 可以不借助vlc插件和flash插件,同时可以兼容主流浏览器
    缺点: 后端转码需要占用大量cpu,同时转码也需要时间导致延时
 
