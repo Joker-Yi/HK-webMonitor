@@ -76,4 +76,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
    1. ffmpeg 转码命令 参数错误,导致后续操作无法进行
    2. ffmpeg 转码命令 转出的视频流存在丢包严重的现象从而画面模糊
-
+   
+  该方案现已经实现,仓库地址: https://github.com/Joker-Yi/flv-demo
